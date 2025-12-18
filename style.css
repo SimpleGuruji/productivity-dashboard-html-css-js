@@ -48,22 +48,23 @@ nav {
 section.allElems {
   height: 100%;
   width: 100%;
-  padding: 40px;
-  padding-top: 80px;
+  padding: 60px;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
+  position: absolute;
 }
 
 .elem {
   background-color: #e5b299;
   height: 350px;
-  width: 250px;
+  width: 260px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
   transition: all ease 0.5s;
+  cursor: pointer;
 }
 
 .elem img {
@@ -82,4 +83,24 @@ section.allElems {
 
 .elem:active {
   scale: 0.98;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary);
+  position: absolute;
+  display: none;
+  padding: 40px;
+}
+
+.back {
+  position: absolute;
+  right: 5%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--tertiary2);
+  font-size: 20px;
+  cursor: pointer;
 }
