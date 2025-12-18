@@ -1,6 +1,6 @@
 :root {
   --primary: #fcdec0;
-  --secondary: #7d5a50;
+  --secondary: #3e1a0f;
   --tertiary1: #e5b299;
   --tertiary2: #b4846c;
 }
@@ -22,10 +22,64 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Aeonik-Regular;
+  color: var(--primary);
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: var(--tertiary2);
+}
+
+section.allElems {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  padding-top: 80px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.elem {
+  background-color: #e5b299;
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.5s;
+}
+
+.elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.elem h2 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.elem:active {
+  scale: 0.98;
 }
